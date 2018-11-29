@@ -1,0 +1,13 @@
+<app-header (navigateEvent)="onNavigateEvent($event)"></app-header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+           <app-recipes *ngIf="showIf === 'Recipe'"></app-recipes>
+           <app-shopping-list *ngIf="showIf !== 'Recipe'"></app-shopping-list>
+        </div>
+    </div>
+
+
+</div>
+
+
